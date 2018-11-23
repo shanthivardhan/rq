@@ -1,8 +1,8 @@
 from .compat import as_text
 
 
-WORKERS_BY_QUEUE_KEY = 'rq:workers:%s'
-REDIS_WORKER_KEYS = 'rq:workers'
+WORKERS_BY_QUEUE_KEY = 'resque:workers:%s'
+REDIS_WORKER_KEYS = 'resque:workers'
 
 
 def register(worker, pipeline=None):

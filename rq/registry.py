@@ -79,7 +79,7 @@ class StartedJobRegistry(BaseRegistry):
     Jobs are added to registry right before they are executed and removed
     right after completion (success or failure).
     """
-    key_template = 'rq:wip:{0}'
+    key_template = 'resque:wip:{0}'
 
     def cleanup(self, timestamp=None):
         """Remove expired jobs from registry and add them to FailedQueue.

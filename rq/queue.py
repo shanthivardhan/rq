@@ -29,8 +29,8 @@ def compact(lst):
 class Queue(object):
     job_class = Job
     DEFAULT_TIMEOUT = 180  # Default timeout seconds.
-    redis_queue_namespace_prefix = 'rq:queue:'
-    redis_queues_keys = 'rq:queues'
+    redis_queue_namespace_prefix = 'resque:queue:'
+    redis_queues_keys = 'resque:queues'
 
     @classmethod
     def all(cls, connection=None, job_class=None):

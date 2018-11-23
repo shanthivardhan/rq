@@ -92,7 +92,7 @@ WorkerStatus = enum(
 
 
 class Worker(object):
-    redis_worker_namespace_prefix = 'rq:worker:'
+    redis_worker_namespace_prefix = 'resque:worker:'
     redis_workers_keys = worker_registration.REDIS_WORKER_KEYS
     death_penalty_class = UnixSignalDeathPenalty
     queue_class = Queue
